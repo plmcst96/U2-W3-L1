@@ -62,7 +62,7 @@ petForm.addEventListener('submit', function (e) {
     listPet.innerHTML = `<li>Nome dell'animale: ${pet.petName}</li>
     <li>Nome del proprietario: ${pet.ownerName}</li>
     <li>Specie: ${pet.species}</li>
-    <li>Razza: ${pet.breed}</li></ul>`
+    <li>Razza: ${pet.breed}</li>`
     petList.appendChild(listPet);
     // verifichiamo se ci sono animali con lo stesso proprietario
     const sameOwner = allPet.filter(otherPet => pet.sameOwner(otherPet));
